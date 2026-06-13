@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+<meta charset="UTF-8">
+<title>Update Student</title>
+</head>
+
+<body>
+
+<h2>Update Student</h2>
+
+<form action="/update" method="post">
+
+<input type="hidden"
+       name="id"
+       th:value="${student.id}">
+
+Name:
+<input type="text"
+       name="name"
+       th:value="${student.name}"
+       required>
+
+<br><br>
+
+Department:
+<input type="text"
+       name="department"
+       th:value="${student.department}"
+       required>
+
+<br><br>
+
+Marks:
+<input type="number"
+       name="marks"
+       th:value="${student.marks}"
+       required>
+
+<br><br>
+
+<button type="submit">
+Update
+</button>
+
+</form>
+
+<br>
+
+<a href="/">Back</a>
+
+</body>
+</html>
