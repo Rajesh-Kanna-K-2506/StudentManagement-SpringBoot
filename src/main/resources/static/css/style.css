@@ -1,0 +1,148 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#667eea,#764ba2);
+    min-height:100vh;
+    padding:30px;
+}
+
+.navbar{
+    background:rgba(255,255,255,0.15);
+    backdrop-filter:blur(10px);
+    color:white;
+    padding:20px;
+    text-align:center;
+    border-radius:15px;
+    font-size:30px;
+    font-weight:bold;
+    box-shadow:0 8px 20px rgba(0,0,0,0.2);
+}
+
+.container{
+    max-width:1200px;
+    margin:auto;
+    margin-top:30px;
+}
+
+.card{
+    background:white;
+    border-radius:20px;
+    padding:30px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.15);
+}
+
+.dashboard{
+    display:flex;
+    gap:20px;
+    margin-bottom:30px;
+}
+
+.stat-card{
+    flex:1;
+    background:linear-gradient(135deg,#4facfe,#00f2fe);
+    color:white;
+    padding:25px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 6px 15px rgba(0,0,0,0.2);
+}
+
+.stat-card h2{
+    font-size:35px;
+}
+
+.stat-card p{
+    margin-top:10px;
+}
+
+.btn{
+    padding:12px 22px;
+    border:none;
+    border-radius:30px;
+    text-decoration:none;
+    color:white;
+    font-weight:bold;
+    transition:0.3s;
+    display:inline-block;
+}
+
+.btn-add{
+    background:#10b981;
+}
+
+.btn-edit{
+    background:#f59e0b;
+}
+
+.btn-delete{
+    background:#ef4444;
+}
+
+.btn:hover{
+    transform:translateY(-3px);
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:25px;
+    overflow:hidden;
+    border-radius:15px;
+}
+
+table th{
+    background:#4f46e5;
+    color:white;
+    padding:15px;
+}
+
+table td{
+    padding:15px;
+    text-align:center;
+}
+
+table tr:nth-child(even){
+    background:#f8fafc;
+}
+
+table tr:hover{
+    background:#e0e7ff;
+    transition:0.3s;
+}
+
+input{
+    width:100%;
+    padding:12px;
+    margin-top:8px;
+    margin-bottom:20px;
+    border:2px solid #ddd;
+    border-radius:10px;
+    outline:none;
+    transition:0.3s;
+}
+
+input:focus{
+    border-color:#4f46e5;
+}
+
+label{
+    font-weight:600;
+}
+
+.form-title{
+    text-align:center;
+    margin-bottom:25px;
+    color:#333;
+}
+.footer{
+    margin-top:40px;
+    text-align:center;
+    color:white;
+    font-size:15px;
+    padding:15px;
+}

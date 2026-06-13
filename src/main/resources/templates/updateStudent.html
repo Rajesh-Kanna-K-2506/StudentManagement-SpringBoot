@@ -1,54 +1,35 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
-
 <head>
 <meta charset="UTF-8">
 <title>Update Student</title>
+<link rel="stylesheet" th:href="@{/css/style.css}">
 </head>
-
 <body>
-
-<h2>Update Student</h2>
-
-<form action="/update" method="post">
-
-<input type="hidden"
-       name="id"
-       th:value="${student.id}">
-
-Name:
-<input type="text"
-       name="name"
-       th:value="${student.name}"
-       required>
-
-<br><br>
-
-Department:
-<input type="text"
-       name="department"
-       th:value="${student.department}"
-       required>
-
-<br><br>
-
-Marks:
-<input type="number"
-       name="marks"
-       th:value="${student.marks}"
-       required>
-
-<br><br>
-
-<button type="submit">
-Update
-</button>
-
-</form>
-
-<br>
-
-<a href="/">Back</a>
-
+<div class="navbar">
+    Update Student
+</div>
+<div class="container">
+    <div class="card">
+      <h2 class="form-title">Update Student Details</h2>
+        <form action="/update" method="post">
+            <input type="hidden" name="id" th:value="${student.id}">
+            <label>Name</label>
+            <input type="text" name="name" th:value="${student.name}" required>
+            <label>Department</label>
+            <input type="text" name="department" th:value="${student.department}" required>
+            <label>Marks</label>
+            <input type="number" name="marks" th:value="${student.marks}" required>
+            <br>
+            <button type="submit" class="btn btn-edit">Update Student</button>
+            <a href="/" class="btn btn-add">Back</a>
+        </form>
+    </div>
+</div>
+<footer class="footer">
+    <p>
+        Student Management System | Developed by Rajesh Kanna © 2026
+    </p>
+</footer>
 </body>
 </html>
